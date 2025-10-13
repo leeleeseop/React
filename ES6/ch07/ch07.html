@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 스프레드 연산자
+        const a = [1, 2, 3];
+        const b = [4, 5, 6];
+        const c = [...a, ...b];
+
+        // 스프레드와 구조분해 함께 사용
+        const number = [1, 2, 3, 4, 5];
+        const [one, two, ...rest] = number;
+        console.log('one = ' + one );
+        // rest 배열의 2번째 인덱스(5)
+        console.log(rest[2]);
+
+        // 객체에 스프레드 연산자 사용
+        const man1 = {
+            name: '홍길동',
+            address: '서울',
+            age: 22
+        }
+
+        const man2 = {
+            name: '홍길서',
+            brithday: '1468-02-02',
+            gender: '남'
+        }
+        const man = {...man1, ...man2}
+        // 모든 속성들이 합쳐진다. 속성명이 같은 건 마지막걸로 덮어짐
+        console.log(man);
+    </script>
+</body>
+</html>
