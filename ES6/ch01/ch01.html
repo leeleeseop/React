@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    class Car {
+        constructor(car_brand) {
+            this.brand = car_brand;
+        }
+        hello(){
+            return ` 제 차의 브랜드는 ${this.brand} 입니다.`;
+        }
+    }
+
+    // 클래스 상속
+    class Model extends Car {
+       constructor(car_brand, car_model) {
+        // super를 통해 부모 클래스의 생성자를 호출을 해서 셋팅
+        super(car_brand);
+        this.model = car_model;
+       } 
+       hi() {
+        return this.hello() + `, 차종은 ${this.model} 입니다. `;
+       }
+    }
+    //const mycar = new Car("Hyundae");
+    const mycar = new Model("Hyundae", "Genesis");
+    //let a = mycar.hello();
+    let a = mycar.hi();
+    //console.log(mycar.brand);
+    console.log(a);
+</script>
+</body>
+</html>
