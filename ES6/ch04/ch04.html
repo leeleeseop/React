@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="aaa">aaa</div>
+
+    <script>
+        // var, let
+        // var : function scope
+        // let : block scope
+        if(true) {
+            var a = 10;
+            let b = 20;
+            console.log(b); // 블록 밖에 있으면 ReferenceError가 발생
+        }
+        console.log(a);
+        
+        // hoisting 끌어올리기, 호이스팅 c 값은 undefined로 초기화
+        console.log(c);
+        var c = 5;
+        //let c = 5; // TDZ Temporal Dead Zone 일시적 사각 지대, 정의는 되지만 초기화가 안된 상태
+
+        // 중복 선언
+        var d = 1;
+        var d = 2;
+        console.log(d); // 중복이 된다
+
+        // let은 중복이 되었을 떄 알려주기 때문에 안전
+        //let e = 1;
+        //let e = 2;
+        //console.log(e); // SyntaxError 중복선언이 안된다
+
+        //var f = 100;
+        let f = 100;
+        console.log(window.f);
+
+        // const
+        const x = document.getElementById("aaa");
+        x.innerHTML = "bbb"
+    </script>
+</body>
+</html>
