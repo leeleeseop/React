@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre id="demo"></pre>
+    <script>
+        const name = '이이섭';
+        const age = 26;
+        const message = `안녕하세요, ${name}님 
+        당신은 ${age}세 입니다.`;
+        console.log(message);
+
+        const x = `
+            안녕
+                    하세요.
+            반갑
+                습니다.
+        `
+        document.getElementById("demo").innerHTML = x;
+
+        let sung = "이";
+        let myung = "이섭";
+        let text = `안녕하세요. 저는 ${sung} ${myung} 입니다.`;
+
+        let price = 1000;
+        let quantity = 7;
+        let total = `Total: ${price * quantity}`;
+
+        const isAdmin = true;
+        const message1 = `Status: ${isAdmin ? 'Admin' : 'User'}`;
+    </script>
+</body>
+</html>
