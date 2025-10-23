@@ -1,5 +1,5 @@
 # React
 리액트
 
-React
-https://like-manta-ec8.notion.site/28be3e2a25fd801cb607fd0f24891669?v=28be3e2a25fd80fbaf25000cc63227c3&source=copy_link
+React <br>
+https://like-manta-ec8.notion.site/React-295e3e2a25fd80b4a69ef4c98e8e0545?source=copy_link
